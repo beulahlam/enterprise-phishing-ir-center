@@ -1,0 +1,87 @@
+[
+    {
+        "timestamp": "2026-09-12T04:19:27.280656+00:00",
+        "event_type": "phishing_investigation",
+        "case_id": "INC-002",
+        "subject": "URGENT: Outstanding Invoice Requires Review",
+        "sender": "Accounts Payable <billing@example.net>",
+        "reply_to": "payment-support@example.org",
+        "risk_score": 50,
+        "severity": "Medium",
+        "escalation_required": false,
+        "indicators": {
+            "urgency": true,
+            "credential_request": false,
+            "sender_replyto_mismatch": true,
+            "suspicious_url": false,
+            "suspicious_attachment": true
+        },
+        "iocs": {
+            "urls": [],
+            "domains": [],
+            "email_addresses": [
+                "billing@example.net",
+                "employee@company.example",
+                "payment-support@example.org"
+            ]
+        },
+        "mitre_attack": [
+            {
+                "technique_id": "T1566.001",
+                "technique": "Spearphishing Attachment",
+                "tactic": "Initial Access"
+            }
+        ],
+        "threat_intelligence": [
+            {
+                "provider": "VirusTotal",
+                "lookup_type": "SHA-256",
+                "hash": "5a0dcae34fa08928c1121c06a4e00e4b5a6588bc40672eb42adda671d8b10f8d",
+                "status": "not_found",
+                "malicious": 0,
+                "suspicious": 0,
+                "harmless": 0,
+                "undetected": 0
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-09-12T04:24:10.907244+00:00",
+        "event_type": "phishing_investigation",
+        "case_id": "INC-001",
+        "subject": "URGENT: Password Expiration Notice",
+        "sender": "Microsoft Security <security@example.com>",
+        "reply_to": "account-support@example.net",
+        "risk_score": 60,
+        "severity": "High",
+        "escalation_required": true,
+        "indicators": {
+            "urgency": true,
+            "credential_request": true,
+            "sender_replyto_mismatch": true,
+            "suspicious_url": true,
+            "suspicious_attachment": false
+        },
+        "iocs": {
+            "urls": [
+                "http://example.com/security/login"
+            ],
+            "domains": [
+                "example.com"
+            ],
+            "email_addresses": [
+                "account-support@example.net",
+                "employee@company.example",
+                "security@example.com"
+            ]
+        },
+        "mitre_attack": [
+            {
+                "technique_id": "T1566.002",
+                "technique": "Spearphishing Link",
+                "tactic": "Initial Access"
+            }
+        ],
+        "threat_intelligence": []
+    }
+]

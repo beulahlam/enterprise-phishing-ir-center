@@ -1,0 +1,35 @@
+{
+    "case_id": "INC-001",
+    "timestamp": "2026-09-11T19:35:02",
+    "source": "Employee-Reported Suspicious Email",
+    "category": "Suspected Credential Phishing",
+    "sender": "security@example.com",
+    "sender_display_name": "Microsoft Security",
+    "recipient": "employee@company.example",
+    "reply_to": "account-support@example.net",
+    "subject": "URGENT: Password Expiration Notice",
+    "urls": [
+        "http://example.com/security/login"
+    ],
+    "domains": [
+        "example.com"
+    ],
+    "ip_addresses": [],
+    "attachments": [],
+    "indicators": {
+        "urgency": true,
+        "credential_request": true,
+        "sender_replyto_mismatch": true,
+        "suspicious_url": true,
+        "suspicious_attachment": false,
+        "user_clicked": false,
+        "credentials_submitted": false,
+        "known_malicious_ioc": false
+    },
+    "risk_score": 60,
+    "severity": "High",
+    "status": "Investigating",
+    "escalation_required": true,
+    "containment_action": "Pending investigation",
+    "final_disposition": "Suspicious - Investigation in Progress"
+}

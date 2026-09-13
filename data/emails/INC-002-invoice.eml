@@ -1,0 +1,33 @@
+From: Accounts Payable <billing@example.net>
+To: employee@company.example
+Subject: URGENT: Outstanding Invoice Requires Review
+Date: Thu, 10 Sep 2026 19:20:00 -0400
+Message-ID: <INC-002@example.net>
+Reply-To: payment-support@example.org
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="INC002BOUNDARY"
+
+--INC002BOUNDARY
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Employee,
+
+An outstanding invoice requires your immediate attention.
+
+Please review the attached invoice document.
+
+Failure to review the invoice today may result in a payment delay.
+
+Accounts Payable
+
+--INC002BOUNDARY
+Content-Type: text/plain; name="invoice.txt"
+Content-Disposition: attachment; filename="invoice.txt"
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIGhhcm1sZXNzIHNpbXVsYXRlZCBpbnZvaWNlIGF0dGFjaG1lbnQgZm9yIHRo
+ZSBwaGlzaGluZyBpbmNpZGVudCByZXNwb25zZSBsYWIuCgpDYXNlIElEOiBJTkMtMDAyClB1
+cnBvc2U6IFNhZmUgYXR0YWNobWVudCBhbmFseXNpcyBhbmQgU0hBLTI1NiBoYXNoaW5nIGRl
+bW9uc3RyYXRpb24u
+
+--INC002BOUNDARY--

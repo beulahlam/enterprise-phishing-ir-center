@@ -1,0 +1,55 @@
+{
+    "case_id": "INC-001",
+    "analysis_timestamp": "2026-09-11T23:44:27",
+    "source": "Employee-Reported Suspicious Email",
+    "category": "Suspected Credential Phishing",
+    "email": {
+        "from": "Microsoft Security <security@example.com>",
+        "to": "employee@company.example",
+        "reply_to": "account-support@example.net",
+        "subject": "URGENT: Password Expiration Notice",
+        "message_id": "<INC-001@example.com>"
+    },
+    "iocs": {
+        "urls": [
+            "http://example.com/security/login"
+        ],
+        "domains": [
+            "example.com"
+        ],
+        "email_addresses": [
+            "account-support@example.net",
+            "employee@company.example",
+            "security@example.com"
+        ]
+    },
+    "attachments": [],
+    "threat_intelligence": [],
+    "indicators": {
+        "urgency": true,
+        "credential_request": true,
+        "sender_replyto_mismatch": true,
+        "suspicious_url": true,
+        "suspicious_attachment": false
+    },
+    "mitre_attack": [
+        {
+            "technique_id": "T1566.002",
+            "technique": "Spearphishing Link",
+            "tactic": "Initial Access"
+        }
+    ],
+    "risk_score": 60,
+    "severity": "High",
+    "escalation_required": true,
+    "recommended_response_actions": [
+        "Escalate case to senior CTC/SOC analyst",
+        "Preserve email and investigation evidence",
+        "Recommend blocking identified phishing URL/domain",
+        "Determine whether the recipient interacted with the link",
+        "Determine whether credentials were submitted",
+        "Search for similar messages across the environment",
+        "Communicate investigation outcome to reporting user"
+    ],
+    "status": "Investigating"
+}

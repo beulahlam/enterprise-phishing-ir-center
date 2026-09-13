@@ -1,0 +1,43 @@
+# Environment variables / secrets
+.env
+.env.*
+*.env
+
+# API keys / local secrets
+secrets/
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# VS Code local settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# Python testing/cache
+.pytest_cache/
+.mypy_cache/
+
+# Splunk local/runtime files
+splunk/var/
+splunk/etc/
+
+# Packet captures other than intentionally retained portfolio evidence
+*.pcap
+*.pcapng

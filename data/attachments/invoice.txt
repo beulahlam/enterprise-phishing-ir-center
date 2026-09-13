@@ -1,0 +1,4 @@
+This is a harmless simulated invoice attachment for the phishing incident response lab.
+
+Case ID: INC-002
+Purpose: Safe attachment analysis and SHA-256 hashing demonstration.
