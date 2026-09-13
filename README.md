@@ -135,9 +135,11 @@ Wireshark was used to capture and analyze endpoint network activity.
 
 The investigation focused on DNS traffic to demonstrate how SOC analysts can examine domain-resolution activity and correlate network evidence with phishing indicators.
 
-The packet capture is preserved as:
+The packet capture was retained locally as:
 
-`wireshark/05_phishing_network_investigation.pcapng`
+wireshark/05_phishing_network_investigation.pcapng
+
+Raw packet captures are excluded from the public repository to avoid publishing unnecessary network data. Investigation evidence is provided through sanitized screenshots.
 
 ![Wireshark DNS Investigation](screenshots/06_wireshark_dns_investigation.png)
 
